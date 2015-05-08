@@ -1,0 +1,343 @@
+@import "compass/css3";
+@import "compass/reset";
+*{
+	font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+}
+.head{
+	padding: 30px;
+	text-align: center;
+	p{
+		font-weight: 600;
+		font-size: 40px;
+	}
+}
+.demo{
+	padding: 10px;
+	text-align: center;
+	background-color: #435a6b;
+	a{
+		@include inline-block;
+		margin: 30px 35px;
+		font-size: 30px;
+		font-weight: 600;
+		color: #fff;
+		text-decoration: none;
+		position: relative;
+	}
+}
+.effect-bracket{	
+	a{
+		&::before {
+			margin-right: 10px;
+			content: '[';
+			@include translateX(20px);
+			@include opacity(0);
+			@include transition(0.3s);
+		}
+		&::after {
+			margin-left: 10px;
+			content: ']';
+			@include translateX(-20px);
+			@include opacity(0);
+			@include transition(0.3s);
+
+		}
+		&:hover,&:focus
+			{
+				&::before,&::after
+				{
+					@include opacity(1);
+					@include translateX(0);
+				}
+			}
+	}
+}
+.effect-bottom-line{
+	a{
+		&::after {
+			position: absolute;
+			bottom: -8px;
+			left: 0;
+			content: "";
+			height: 2px;
+			width: 100%;
+			background-color: #f19f0f;
+			@include translateY(15px);
+			@include opacity(0);
+			@include transition(0.3s);		
+		}
+	&:hover,:focus 
+	{
+		&:after{
+			@include opacity(1);
+			@include translateY(0);
+		}	
+	}
+	}
+}
+.effect-double-line{
+	a{
+		&::before {
+			position: absolute;
+			bottom: -8px;
+			left: 0;
+			content: "";
+			height: 2px;
+			width: 100%;
+			background-color: #f19f0f;
+			@include scale(0.85);
+			@include transition(0.3s)
+		}
+		&::after {
+			position: absolute;
+			top: -6px;
+			left: 0;
+			content: "";
+			height: 2px;
+			width: 100%;
+			background-color: #f19f0f;
+			@include scale(0.85);
+			@include opacity(0);
+			@include translateY(40px);
+			@include transition(0.3s)
+		}
+		&:hover,:focus 
+		{
+			&:after,&:before{
+				@include opacity(1);
+				@include translateY(0);
+			}	
+		}
+	}
+}
+.effect-double-line-slight{
+	a{
+		&::before {
+			position: absolute;
+			bottom: -8px;
+			left: 0;
+			content: "";
+			height: 2px;
+			width: 100%;
+			background-color: #f19f0f;
+			@include opacity(0);
+			@include translateY(20px);
+			@include transition(0.3s)
+		}
+		&::after {
+			position: absolute;
+			top: -6px;
+			left: 0;
+			content: "";
+			height: 2px;
+			width: 100%;
+			background-color: #f19f0f;
+			@include opacity(0); 
+			@include translateY(-20px);
+			@include transition(0.3s)
+		 }
+		&:hover,:focus 
+		{
+			color: #f19f0f;
+			&:after,&:before{
+				@include opacity(1);
+				@include translateY(0);
+			}	
+		}
+	}
+}
+.effect-scale-down{
+	a{
+		color: #333;
+		&::before {
+			color: #fff;
+			content: attr(data-hover);
+			@include transition(0.3s);	
+			position: absolute;
+		}
+		&:hover,:focus {
+			&::before {
+				@include scale(0.9);
+				@include opacity(0);
+			}
+		}
+	}
+}
+.effect-scale-up{
+	a{
+		color: #333;
+		&::before {
+			color: #fff;
+			content: attr(data-hover); 
+			@include transition(0.6s);	
+			position: absolute;
+		}
+		&:hover,:focus {
+			&::before {
+				@include scale(1.5);
+				@include opacity(0);
+			}
+		}
+	}
+}
+.effect-fall-down{
+	a{
+		color: #333;
+		&::before {
+			color: #fff;
+			content: attr(data-hover);
+			@include transition(0.6s);	
+			position: absolute;
+			@include opacity(0);
+			@include transform(scale(1.1) translateX(10px) translateY(-10px) rotate(4deg));
+		}
+		&:hover,:focus {
+			&::before {
+				@include opacity(1);
+				@include transform(scale(1) translateX(0) translateY(0) rotate(0));
+			}
+		}
+	}
+}
+.effect-border-fall{
+	a{
+		&:before{
+			content: "";
+			position: absolute;
+			top: -3%;
+			left: -3%;
+			width: 100%;
+			height: 100%;
+			border: 3px solid #354856;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			top: -3%;
+			left: -3%;
+			width: 100%;
+			height: 100%;
+			border: 3px solid #fff;
+			@include opacity(0);
+			@include transform(scale(1.1) translateX(10px) translateY(-10px) rotate(4deg));
+			@include transition(0.5s);
+		}
+		&:hover,:focus {
+			&::after {
+				@include opacity(1);
+				@include transform(scale(1) translateX(0) translateY(0) rotate(0));
+			}
+		}
+	}
+}
+
+.effect-text-fill{
+	//大思路——由0%到100%
+	a{
+		color: #333;
+		&:before{
+			content: attr(data-hover);
+			color: #fff;
+			position: absolute;
+			max-width: 0;
+			overflow: hidden;
+			white-space: nowrap;//规定段落中的文本不进行换行
+			@include transition(0.5s);
+		}
+		//注意！！！hover前面一个冒号
+		&:hover,:focus {
+			&::before {
+				max-width: 100%;
+			}
+		}
+	}
+}
+.effect-push{
+	//大思路：设置一个overflow：hidden框遮盖住要显示部分
+	//hover时显示部分移动走
+	//遮罩部分移动出来
+	a{
+		overflow: hidden;
+		span{
+			display: block;
+			background-color: #0f7c67;
+			padding: 10px;
+			@include transition(0.5s);
+		}
+		&:before{
+			position: absolute;
+			content: attr(data-hover);
+			background-color: #fff;
+			color: #0f7c67;
+			width: 100%;
+			padding: 10px 0;
+			left: -100%;
+			@include transition(0.5s);
+		}
+		&:hover,:focus {
+			span{
+				@include translateX(100%);
+			}
+			&::before {
+				@include translateX(100%);
+			}
+		}
+	}
+}
+.effect-slide{
+	a{
+		overflow: hidden;
+		span{
+			@include inline-block;//不设置inline-block无法移动
+			@include transition(0.5s);
+		}
+		&:before {
+			content: attr(data-hover);
+			position: absolute;	
+			top: 100%;
+			@include transition(0.5s);	
+		}
+		&:hover,:focus {
+			span{
+				@include translateY(-110%);
+			}
+			&::before {
+				@include translateY(-100%);
+			}
+		}
+	}
+}
+.effect-slide-3d{
+		a{
+			@include perspective(1000px);
+		span{
+			@include inline-block;
+			background-color: #0f7c67;
+			padding: 10px;
+			@include transition(0.5s);
+			@include transform-style(preserve-3d);
+			//@include transform-origin(50% 0);
+			-webkit-transform-origin: 50% 0;
+		}
+		&:before{
+			position: absolute;
+			content: attr(data-hover);
+			background-color: #0f7c67;
+			padding: 10px;
+			top: 0%;
+			left: 0;
+			@include transition(0.5s);
+			@include rotateX(-90deg);
+			//@include transform-origin(50% 0);	
+			-webkit-transform-origin: 50% 0;
+		}
+		&:hover,:focus {
+			span{
+				@include transform(rotateX(90deg) translateY(-22px));
+			}
+			&::before {
+				// @include rotateX(0);
+			}
+		}
+	}
+}

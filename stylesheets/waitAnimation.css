@@ -1,0 +1,564 @@
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/waitAnimation.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 7, ../sass/waitAnimation.scss */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+/* line 14, ../sass/waitAnimation.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 19, ../sass/waitAnimation.scss */
+.main .wait-1 {
+  width: 110px;
+  margin: 100px auto;
+}
+/* line 22, ../sass/waitAnimation.scss */
+.main .wait-1 li {
+  float: left;
+  width: 10px;
+  height: 15px;
+  background-color: black;
+  margin-right: 5px;
+  -moz-animation: wait-1 1s ease-out 0 infinite;
+  -webkit-animation: wait-1 1s ease-out 0 infinite;
+  animation: wait-1 1s ease-out 0 infinite;
+}
+@-moz-keyframes wait-1 {
+  0% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  20% {
+    -moz-transform: scale(1, 2);
+    transform: scale(1, 2);
+  }
+  40% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  60% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes wait-1 {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  20% {
+    -webkit-transform: scale(1, 2);
+    transform: scale(1, 2);
+  }
+  40% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  60% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@keyframes wait-1 {
+  0% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  20% {
+    -moz-transform: scale(1, 2);
+    -ms-transform: scale(1, 2);
+    -webkit-transform: scale(1, 2);
+    transform: scale(1, 2);
+  }
+  40% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  60% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  80% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+/* line 50, ../sass/waitAnimation.scss */
+.main .wait-1 .wait1-a {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+/* line 53, ../sass/waitAnimation.scss */
+.main .wait-1 .wait1-b {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 56, ../sass/waitAnimation.scss */
+.main .wait-1 .wait1-c {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+/* line 59, ../sass/waitAnimation.scss */
+.main .wait-1 .wait1-d {
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 62, ../sass/waitAnimation.scss */
+.main .wait-1 .wait1-e {
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+/* line 67, ../sass/waitAnimation.scss */
+.circle {
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+}
+/* line 71, ../sass/waitAnimation.scss */
+.circle .out-circle {
+  width: 150px;
+  height: 150px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 10px solid #000;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  -moz-box-shadow: 0 0 20px 0 #000;
+  -webkit-box-shadow: 0 0 20px 0 #000;
+  box-shadow: 0 0 20px 0 #000;
+  -moz-animation: out-cirle 1s linear 0 infinite;
+  -webkit-animation: out-cirle 1s linear 0 infinite;
+  animation: out-cirle 1s linear 0 infinite;
+}
+@-moz-keyframes out-cirle {
+  0% {
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes out-cirle {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes out-cirle {
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 89, ../sass/waitAnimation.scss */
+.circle .in-circle {
+  position: absolute;
+  top: 6%;
+  left: 7%;
+  margin: 10%;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 10px solid #000;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  -moz-box-shadow: 0 0 20px 0 #000;
+  -webkit-box-shadow: 0 0 20px 0 #000;
+  box-shadow: 0 0 20px 0 #000;
+  -moz-animation: in-cirle 1s linear 0 infinite;
+  -webkit-animation: in-cirle 1s linear 0 infinite;
+  animation: in-cirle 1s linear 0 infinite;
+}
+@-moz-keyframes in-cirle {
+  0% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes in-cirle {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@keyframes in-cirle {
+  0% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  100% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+/* line 112, ../sass/waitAnimation.scss */
+.circle-2 {
+  width: 150px;
+  margin: 70px auto;
+  position: relative;
+}
+/* line 116, ../sass/waitAnimation.scss */
+.circle-2 .out-circle-2 {
+  width: 150px;
+  height: 150px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 10px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  -moz-box-shadow: 0 0 20px 0 #000;
+  -webkit-box-shadow: 0 0 20px 0 #000;
+  box-shadow: 0 0 20px 0 #000;
+  -moz-animation: out-cirle-2 0.9s ease-in-out 0 infinite;
+  -webkit-animation: out-cirle-2 0.9s ease-in-out 0 infinite;
+  animation: out-cirle-2 0.9s ease-in-out 0 infinite;
+}
+@-moz-keyframes out-cirle-2 {
+  0% {
+    -moz-transform: rotate(160deg);
+    transform: rotate(160deg);
+    opacity: 0;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-300deg);
+    transform: rotate(-300deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes out-cirle-2 {
+  0% {
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(145deg);
+    transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-300deg);
+    transform: rotate(-300deg);
+    opacity: 1;
+  }
+}
+@keyframes out-cirle-2 {
+  0% {
+    -moz-transform: rotate(160deg);
+    -ms-transform: rotate(160deg);
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+    opacity: 0;
+  }
+  50% {
+    -moz-transform: rotate(145deg);
+    -ms-transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+    transform: rotate(145deg);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: rotate(-300deg);
+    -ms-transform: rotate(-300deg);
+    -webkit-transform: rotate(-300deg);
+    transform: rotate(-300deg);
+    opacity: 1;
+  }
+}
+/* line 141, ../sass/waitAnimation.scss */
+.circle-2 .in-circle-2 {
+  position: absolute;
+  top: 6%;
+  left: 7%;
+  margin: 10%;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 10px solid #000;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  -moz-box-shadow: 0 0 20px 0 #000;
+  -webkit-box-shadow: 0 0 20px 0 #000;
+  box-shadow: 0 0 20px 0 #000;
+  -moz-animation: in-cirle-2 1s linear 0 infinite;
+  -webkit-animation: in-cirle-2 1s linear 0 infinite;
+  animation: in-cirle-2 1s linear 0 infinite;
+}
+@-moz-keyframes in-cirle-2 {
+  0% {
+    -moz-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes in-cirle-2 {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes in-cirle-2 {
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 164, ../sass/waitAnimation.scss */
+.wait-2 {
+  width: 110px;
+  margin: 100px auto;
+}
+/* line 167, ../sass/waitAnimation.scss */
+.wait-2 li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: black;
+  margin-right: 5px;
+  -moz-animation: wait-2 1s ease-out 0 infinite;
+  -webkit-animation: wait-2 1s ease-out 0 infinite;
+  animation: wait-2 1s ease-out 0 infinite;
+}
+@-moz-keyframes wait-2 {
+  0% {
+    -moz-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  40% {
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -moz-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+@-webkit-keyframes wait-2 {
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  40% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+@keyframes wait-2 {
+  0% {
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  40% {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -moz-transform: scale(0.5, 0.5);
+    -ms-transform: scale(0.5, 0.5);
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+}
+/* line 187, ../sass/waitAnimation.scss */
+.wait-2 .wait1-a {
+  -moz-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+/* line 190, ../sass/waitAnimation.scss */
+.wait-2 .wait1-b {
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+/* line 193, ../sass/waitAnimation.scss */
+.wait-2 .wait1-c {
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+/* line 196, ../sass/waitAnimation.scss */
+.wait-2 .wait1-d {
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 199, ../sass/waitAnimation.scss */
+.wait-2 .wait1-e {
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}

@@ -1,0 +1,202 @@
+@import "compass/reset";
+@import "compass/css3";
+.clearfix
+       {
+           *zoom: 1;
+        }
+      .clearfix:before,
+       .clearfix:after 
+       {
+             display: table;
+             line-height: 0;
+             content: ""; 
+        }
+        .clearfix:after 
+      {
+             clear: both;
+       }
+.main{
+	.wait-1{
+		width: 110px;
+		margin:100px auto;
+		li{
+			float: left;
+			width: 10px;
+			height: 15px;
+			background-color: black;
+			margin-right: 5px;
+			@include animation(wait-1 1s ease-out 0 infinite);
+			@include keyframes(wait-1){
+				0%{
+					@include scale(1,1);
+				}
+				20%{
+					@include scale(1,2);
+				}
+				40%{
+					@include scale(1,1);
+				}
+				60%{
+					@include scale(1,1);
+				}
+				80%{
+					@include scale(1,1);
+				}
+				100%{
+					@include scale(1,1);
+				}
+			};//时间计算原理：分成了5段，第一段为播放时间，剩下的为等待时间，把等待时间分配到其他待运动的方块中
+		}
+		.wait1-a{
+			@include animation-delay(0s);
+		}
+		.wait1-b{
+			@include animation-delay(0.2s);
+		}
+		.wait1-c{
+			@include animation-delay(0.4s);
+		}
+		.wait1-d{
+			@include animation-delay(0.6s);
+		}
+		.wait1-e{
+			@include animation-delay(0.8s);
+		}
+	}
+}
+.circle{
+	width: 150px;
+	margin: 0 auto;
+	position: relative;
+	.out-circle{
+		width: 150px;
+		height: 150px;
+		@include border-radius(100%);
+		border: 10px solid #000;
+		border-top: 10px solid transparent;
+		border-left: 10px solid transparent;
+		@include box-shadow(0 0 20px 0 #000);
+		@include animation(out-cirle 1s linear 0 infinite);
+		@include keyframes(out-cirle){
+			0%{
+				@include rotate(0);
+			}
+			100%{
+				@include rotate(360deg);
+			}
+		};
+	}
+	.in-circle{
+		position: absolute;
+		top: 6%;
+		left: 7%;
+		margin: 10%;
+		width: 100px;
+		height: 100px;
+		@include border-radius(100%);
+		border: 10px solid #000;
+		border-top: 10px solid transparent;
+		border-left: 10px solid transparent;
+		@include box-shadow(0 0 20px 0 #000);
+		@include animation(in-cirle 1s linear 0 infinite);
+		@include keyframes(in-cirle){
+			0%{
+				@include rotate(360deg);
+			}
+			100%{
+				@include rotate(0);
+			}
+		};
+	}
+}
+.circle-2{
+	width: 150px;
+	margin: 70px auto;
+	position: relative;
+	.out-circle-2{
+		width: 150px;
+		height: 150px;
+		@include border-radius(100%);
+		border: 10px solid #000;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		@include box-shadow(0 0 20px 0 #000);
+		@include animation(out-cirle-2 .9s ease-in-out 0 infinite);
+		@include keyframes(out-cirle-2){
+			0%{
+				@include rotate(160deg);
+				@include opacity(0);
+			}
+			50%{
+				@include rotate(145deg);
+				@include opacity(1);
+			}
+			100%{
+				@include rotate(-300deg);
+				@include opacity(1);
+				
+			}
+		};
+	}
+	.in-circle-2{
+		position: absolute;
+		top: 6%;
+		left: 7%;
+		margin: 10%;
+		width: 100px;
+		height: 100px;
+		@include border-radius(100%);
+		border: 10px solid #000;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		@include box-shadow(0 0 20px 0 #000);
+		@include animation(in-cirle-2 1s linear 0 infinite);
+		@include keyframes(in-cirle-2){
+			0%{
+				@include rotate(0);
+			}
+			100%{
+				@include rotate(360deg);
+			}
+		};
+	}
+}
+.wait-2{
+	width: 110px;
+	margin:100px auto;
+	li{
+		float: left;
+		width: 10px;
+		height: 10px;
+		@include border-radius(100%);
+		background-color: black;
+		margin-right: 5px;
+		@include animation(wait-2 1s ease-out 0 infinite);
+		@include keyframes(wait-2){
+			0%{
+				@include scale(0.5);
+			}
+			40%{
+				@include scale(1);
+			}
+			100%{
+				@include scale(0.5);
+			}
+		};//时间计算原理：分成了5段，第一段为播放时间，剩下的为等待时间，把等待时间分配到其他待运动的方块中
+	}
+	.wait1-a{
+		@include animation-delay(0s);
+	}
+	.wait1-b{
+		@include animation-delay(0.1s);
+	}
+	.wait1-c{
+		@include animation-delay(0.2s);
+	}
+	.wait1-d{
+		@include animation-delay(0.3s);
+	}
+	.wait1-e{
+		@include animation-delay(0.4s);
+	}
+}

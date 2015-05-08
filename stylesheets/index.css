@@ -1,0 +1,550 @@
+/* line 5, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/index.scss */
+* {
+  font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+}
+
+/* line 6, ../sass/index.scss */
+.head {
+  padding: 30px;
+  text-align: center;
+}
+/* line 9, ../sass/index.scss */
+.head p {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+/* line 14, ../sass/index.scss */
+.demo {
+  padding: 10px;
+  text-align: center;
+  background-color: #435a6b;
+}
+/* line 18, ../sass/index.scss */
+.demo a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: 30px 35px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+/* line 30, ../sass/index.scss */
+.effect-bracket a::before {
+  margin-right: 10px;
+  content: '[';
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 37, ../sass/index.scss */
+.effect-bracket a::after {
+  margin-left: 10px;
+  content: ']';
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 47, ../sass/index.scss */
+.effect-bracket a:hover::before, .effect-bracket a:hover::after, .effect-bracket a:focus::before, .effect-bracket a:focus::after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* line 57, ../sass/index.scss */
+.effect-bottom-line a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f19f0f;
+  -moz-transform: translateY(15px);
+  -ms-transform: translateY(15px);
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 71, ../sass/index.scss */
+.effect-bottom-line a:hover:after, .effect-bottom-line a :focus:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 80, ../sass/index.scss */
+.effect-double-line a::before {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f19f0f;
+  -moz-transform: scale(0.85, 0.85);
+  -ms-transform: scale(0.85, 0.85);
+  -webkit-transform: scale(0.85, 0.85);
+  transform: scale(0.85, 0.85);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 91, ../sass/index.scss */
+.effect-double-line a::after {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f19f0f;
+  -moz-transform: scale(0.85, 0.85);
+  -ms-transform: scale(0.85, 0.85);
+  -webkit-transform: scale(0.85, 0.85);
+  transform: scale(0.85, 0.85);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: translateY(40px);
+  -ms-transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 106, ../sass/index.scss */
+.effect-double-line a:hover:after, .effect-double-line a:hover:before, .effect-double-line a :focus:after, .effect-double-line a :focus:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 115, ../sass/index.scss */
+.effect-double-line-slight a::before {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f19f0f;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 127, ../sass/index.scss */
+.effect-double-line-slight a::after {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #f19f0f;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/* line 139, ../sass/index.scss */
+.effect-double-line-slight a:hover, .effect-double-line-slight a :focus {
+  color: #f19f0f;
+}
+/* line 142, ../sass/index.scss */
+.effect-double-line-slight a:hover:after, .effect-double-line-slight a:hover:before, .effect-double-line-slight a :focus:after, .effect-double-line-slight a :focus:before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 150, ../sass/index.scss */
+.effect-scale-down a {
+  color: #333;
+}
+/* line 152, ../sass/index.scss */
+.effect-scale-down a::before {
+  color: #fff;
+  content: attr(data-hover);
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+}
+/* line 159, ../sass/index.scss */
+.effect-scale-down a:hover::before, .effect-scale-down a :focus::before {
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 167, ../sass/index.scss */
+.effect-scale-up a {
+  color: #333;
+}
+/* line 169, ../sass/index.scss */
+.effect-scale-up a::before {
+  color: #fff;
+  content: attr(data-hover);
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: absolute;
+}
+/* line 176, ../sass/index.scss */
+.effect-scale-up a:hover::before, .effect-scale-up a :focus::before {
+  -moz-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 184, ../sass/index.scss */
+.effect-fall-down a {
+  color: #333;
+}
+/* line 186, ../sass/index.scss */
+.effect-fall-down a::before {
+  color: #fff;
+  content: attr(data-hover);
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -ms-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+}
+/* line 195, ../sass/index.scss */
+.effect-fall-down a:hover::before, .effect-fall-down a :focus::before {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: scale(1) translateX(0) translateY(0) rotate(0);
+  -ms-transform: scale(1) translateX(0) translateY(0) rotate(0);
+  -webkit-transform: scale(1) translateX(0) translateY(0) rotate(0);
+  transform: scale(1) translateX(0) translateY(0) rotate(0);
+}
+
+/* line 204, ../sass/index.scss */
+.effect-border-fall a:before {
+  content: "";
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #354856;
+}
+/* line 213, ../sass/index.scss */
+.effect-border-fall a:after {
+  content: "";
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #fff;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -ms-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 226, ../sass/index.scss */
+.effect-border-fall a:hover::after, .effect-border-fall a :focus::after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: scale(1) translateX(0) translateY(0) rotate(0);
+  -ms-transform: scale(1) translateX(0) translateY(0) rotate(0);
+  -webkit-transform: scale(1) translateX(0) translateY(0) rotate(0);
+  transform: scale(1) translateX(0) translateY(0) rotate(0);
+}
+
+/* line 236, ../sass/index.scss */
+.effect-text-fill a {
+  color: #333;
+}
+/* line 238, ../sass/index.scss */
+.effect-text-fill a:before {
+  content: attr(data-hover);
+  color: #fff;
+  position: absolute;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 249, ../sass/index.scss */
+.effect-text-fill a:hover::before, .effect-text-fill a :focus::before {
+  max-width: 100%;
+}
+
+/* line 259, ../sass/index.scss */
+.effect-push a {
+  overflow: hidden;
+}
+/* line 261, ../sass/index.scss */
+.effect-push a span {
+  display: block;
+  background-color: #0f7c67;
+  padding: 10px;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 267, ../sass/index.scss */
+.effect-push a:before {
+  position: absolute;
+  content: attr(data-hover);
+  background-color: #fff;
+  color: #0f7c67;
+  width: 100%;
+  padding: 10px 0;
+  left: -100%;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 278, ../sass/index.scss */
+.effect-push a:hover span, .effect-push a :focus span {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/* line 281, ../sass/index.scss */
+.effect-push a:hover::before, .effect-push a :focus::before {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 288, ../sass/index.scss */
+.effect-slide a {
+  overflow: hidden;
+}
+/* line 290, ../sass/index.scss */
+.effect-slide a span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 294, ../sass/index.scss */
+.effect-slide a:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 100%;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 301, ../sass/index.scss */
+.effect-slide a:hover span, .effect-slide a :focus span {
+  -moz-transform: translateY(-110%);
+  -ms-transform: translateY(-110%);
+  -webkit-transform: translateY(-110%);
+  transform: translateY(-110%);
+}
+/* line 304, ../sass/index.scss */
+.effect-slide a:hover::before, .effect-slide a :focus::before {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 311, ../sass/index.scss */
+.effect-slide-3d a {
+  -moz-perspective: 1000px;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+/* line 313, ../sass/index.scss */
+.effect-slide-3d a span {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background-color: #0f7c67;
+  padding: 10px;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 0;
+}
+/* line 322, ../sass/index.scss */
+.effect-slide-3d a:before {
+  position: absolute;
+  content: attr(data-hover);
+  background-color: #0f7c67;
+  padding: 10px;
+  top: 0%;
+  left: 0;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -moz-transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 50% 0;
+}
+/* line 335, ../sass/index.scss */
+.effect-slide-3d a:hover span, .effect-slide-3d a :focus span {
+  -moz-transform: rotateX(90deg) translateY(-22px);
+  -ms-transform: rotateX(90deg) translateY(-22px);
+  -webkit-transform: rotateX(90deg) translateY(-22px);
+  transform: rotateX(90deg) translateY(-22px);
+}
